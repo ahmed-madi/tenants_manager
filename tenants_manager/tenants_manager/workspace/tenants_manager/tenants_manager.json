@@ -1,0 +1,144 @@
+{
+ "charts": [
+  {
+   "chart_name": "Business Site Analysis",
+   "label": "Business Site Analysis"
+  }
+ ],
+ "content": "[{\"id\":\"gypsg9qFqO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Tenants Manager</span>\",\"col\":12}},{\"id\":\"Mjthuh0Nva\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Business Site Analysis\",\"col\":12}},{\"id\":\"9itNaRg9vp\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Business Owner\",\"col\":5}},{\"id\":\"oUTXaq83rS\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Business Site\",\"col\":5}},{\"id\":\"5V50Ve21i9\",\"type\":\"card\",\"data\":{\"card_name\":\"Business Owners\",\"col\":4}},{\"id\":\"o1oREb_zJ9\",\"type\":\"card\",\"data\":{\"card_name\":\"Sites\",\"col\":4}},{\"id\":\"da_gTdywLt\",\"type\":\"card\",\"data\":{\"card_name\":\"Sites Security and Passwords\",\"col\":4}}]",
+ "creation": "2025-02-09 14:00:17.560836",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "branch",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Tenants Manager",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Business Owners",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Business Owner",
+   "link_count": 0,
+   "link_to": "Business Owner",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Business Type",
+   "link_count": 0,
+   "link_to": "Business Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "description": "The Created Sites \"Tenants\" and Related Information",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sites",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Business Site",
+   "link_count": 0,
+   "link_to": "Business Site",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Business Site Settings",
+   "link_count": 0,
+   "link_to": "Business Site Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sites Security and Passwords",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User Action Logs",
+   "link_count": 0,
+   "link_to": "Business Site User Action Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Emails OTP",
+   "link_count": 0,
+   "link_to": "Business Email Verification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Phones OTP",
+   "link_count": 0,
+   "link_to": "Business Phone Verification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-02-09 14:42:56.842971",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Tenants Manager",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Business Owner",
+   "label": "Business Owner",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Business Site",
+   "label": "Business Site",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [],
+ "title": "Tenants Manager"
+}

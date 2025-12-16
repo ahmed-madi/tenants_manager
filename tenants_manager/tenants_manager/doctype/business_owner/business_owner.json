@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BO-{YY}{MM}{DD}-{###}",
+ "creation": "2025-01-24 11:09:36.999033",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "business_owner_details_section",
+  "first_name",
+  "last_name",
+  "full_name",
+  "owner_profile_image",
+  "column_break_fntv",
+  "email_address",
+  "date_of_birth",
+  "phone_number",
+  "password",
+  "business_details_section",
+  "business_type",
+  "business_legal_name",
+  "business_id",
+  "column_break_jvca",
+  "address_line_1",
+  "address_line_2",
+  "city",
+  "state",
+  "zip_code",
+  "country",
+  "status",
+  "is_email_verified",
+  "is_phone_verified"
+ ],
+ "fields": [
+  {
+   "fieldname": "business_owner_details_section",
+   "fieldtype": "Section Break",
+   "label": "Business Owner Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fntv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "options": "Email",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "business_details_section",
+   "fieldtype": "Section Break",
+   "label": "Business Details"
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Link",
+   "label": "Business Type",
+   "options": "Business Type"
+  },
+  {
+   "fieldname": "business_legal_name",
+   "fieldtype": "Data",
+   "label": "Business Legal Name"
+  },
+  {
+   "fieldname": "business_id",
+   "fieldtype": "Data",
+   "label": "Business ID (CRN)"
+  },
+  {
+   "fieldname": "column_break_jvca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "zip_code",
+   "fieldtype": "Data",
+   "label": "ZIP Code"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "New\nOwner Info Completed\nEmail Verified\nPhone Number Added\nPhone Number Verified\nBusiness Info Completed\nBusiness Address Completed\nCompleted",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "hidden": 1,
+   "label": "Password",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "owner_profile_image",
+   "fieldtype": "Attach Image",
+   "label": "Owner Profile Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_email_verified",
+   "fieldtype": "Check",
+   "label": "Is Email Verified ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_phone_verified",
+   "fieldtype": "Check",
+   "label": "Is Phone Verified ?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-07 23:09:47.443797",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Business Owner",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "API Role",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

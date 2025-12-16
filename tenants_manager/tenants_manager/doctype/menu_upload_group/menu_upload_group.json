@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MUG-{YY}{MM}{DD}-{###}",
+ "creation": "2025-02-17 12:25:15.196374",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "business_owner_id",
+  "status",
+  "business_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "pending\nin_progress\nfailed\nsuccess"
+  },
+  {
+   "fieldname": "business_owner_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Business Owner ID",
+   "options": "Business Owner"
+  },
+  {
+   "fieldname": "business_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Business ID",
+   "options": "Business"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-25 13:13:17.447874",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Menu Upload Group",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

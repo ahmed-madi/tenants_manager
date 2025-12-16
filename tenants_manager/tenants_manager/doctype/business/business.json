@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "autoname": "format:B-{YY}{MM}{DD}-{###}",
+ "creation": "2025-02-12 14:10:21.566526",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "business_owner_details_section",
+  "business_owner",
+  "full_name",
+  "column_break_fntv",
+  "email_address",
+  "phone_number",
+  "business_details_section",
+  "business_name",
+  "domain_name",
+  "atmosphere_keywords",
+  "specialties_keywords",
+  "uniqueness_keywords",
+  "column_break_jvca",
+  "business_logo",
+  "amended_from",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "business_owner_details_section",
+   "fieldtype": "Section Break",
+   "label": "Business Owner Details"
+  },
+  {
+   "fetch_from": "business_owner.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Owner Name",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fntv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "business_owner.email_address",
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "business_owner.phone_number",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "business_details_section",
+   "fieldtype": "Section Break",
+   "label": "Business Details"
+  },
+  {
+   "fieldname": "column_break_jvca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_owner",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Business Owner",
+   "no_copy": 1,
+   "options": "Business Owner",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "business_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Business Name",
+   "no_copy": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "business_logo",
+   "fieldtype": "Attach Image",
+   "label": "Business Logo"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Business",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "atmosphere_keywords",
+   "fieldtype": "Table MultiSelect",
+   "label": "Atmosphere Keywords",
+   "options": "Description Keyword Multiselect"
+  },
+  {
+   "fieldname": "specialties_keywords",
+   "fieldtype": "Table MultiSelect",
+   "label": "Specialties Keywords",
+   "options": "Description Keyword Multiselect"
+  },
+  {
+   "fieldname": "uniqueness_keywords",
+   "fieldtype": "Table MultiSelect",
+   "label": "Uniqueness Keywords",
+   "options": "Description Keyword Multiselect"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "New\nBusiness Name Added\nLogo Added\nAtmosphere Keywords Added\nSpecialties Keywords Added\nUniqueness Keywords Added\nCompleted\nCancelled",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "domain_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Domain Name",
+   "no_copy": 1,
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-26 14:49:05.876271",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Business",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "API Role",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "business_name"
+}

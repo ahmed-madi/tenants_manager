@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "creation": "2025-01-23 17:27:03.669693",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "business_site_id",
+  "administrator_password",
+  "column_break_yzkj",
+  "site_name",
+  "support_password"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_yzkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "support_password",
+   "fieldtype": "Password",
+   "label": "Support Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "administrator_password",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Administrator Password",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "business_site_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Business Site ID",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-31 10:48:35.742091",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Business Site Security",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "business_site_id"
+}

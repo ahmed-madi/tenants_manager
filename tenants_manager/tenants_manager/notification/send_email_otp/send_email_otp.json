@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status==\"Active\"",
+ "creation": "2025-02-10 13:29:06.271115",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Business Email Verification",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Hello,,</h3>\n\n<p>You registered an account on portal, before being able to use your account you need to verify that this is your email address by using the code below.</p>\n\n<p><b>{{ doc.otp_code }}</b></p>\n\n<p>Kind Regards,</p>\n",
+ "message_type": "HTML",
+ "modified": "2025-02-10 15:08:17.535475",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Send Email OTP",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "business_owner_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Please verify your email address"
+}

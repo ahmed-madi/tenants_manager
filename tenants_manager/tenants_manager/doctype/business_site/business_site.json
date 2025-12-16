@@ -1,0 +1,216 @@
+{
+ "actions": [],
+ "autoname": "format:BSITE-{YY}{MM}{DD}-{###}",
+ "creation": "2025-01-27 13:34:26.301675",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "business_details_section",
+  "business_owner",
+  "owner_full_name",
+  "business",
+  "business_name",
+  "business_domain",
+  "column_break_jvca",
+  "owner_email",
+  "phone_number",
+  "subscription_period_s90",
+  "creation_date",
+  "apps_to_install",
+  "progress_status",
+  "status",
+  "column_break_11",
+  "hashcode",
+  "site_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "business_details_section",
+   "fieldtype": "Section Break",
+   "label": "Business Details"
+  },
+  {
+   "fieldname": "column_break_jvca",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subscription_period_s90",
+   "fieldtype": "Section Break",
+   "label": "Site Details"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "\nDraft\nPending\nIn Progress\nReady to Use\nFailed\nSuspended\nCancelled",
+   "permlevel": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "hashcode",
+   "fieldtype": "Data",
+   "label": "Hash",
+   "no_copy": 1,
+   "permlevel": 1,
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name",
+   "no_copy": 1,
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Business Site",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Business Site",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "business_owner",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Business Owner",
+   "options": "Business Owner",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "business_owner.full_name",
+   "fieldname": "owner_full_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Owner Full Name"
+  },
+  {
+   "fetch_from": "business_owner.email_address",
+   "fieldname": "owner_email",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Owner Email"
+  },
+  {
+   "fetch_from": "business_owner.phone_number",
+   "fieldname": "phone_number",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Phone Number"
+  },
+  {
+   "default": "Today",
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Creation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "apps_to_install",
+   "fieldtype": "Table",
+   "label": "Apps To Install",
+   "options": "Business App To Install"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "progress_status",
+   "fieldtype": "Select",
+   "label": "Progress Status",
+   "no_copy": 1,
+   "options": "\nDraft\nPending\nIn Progress\nInstalling Apps\nCompleted\nCleanup\nReady to Use\nFailed\nSuspended\nCancelled",
+   "permlevel": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "business",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Business",
+   "options": "Business",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "business.business_name",
+   "fetch_if_empty": 1,
+   "fieldname": "business_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Business Name"
+  },
+  {
+   "fetch_from": "business.domain_name",
+   "fieldname": "business_domain",
+   "fieldtype": "Read Only",
+   "label": "Business Domain"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-01 13:17:24.541697",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Business Site",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "owner_full_name"
+}

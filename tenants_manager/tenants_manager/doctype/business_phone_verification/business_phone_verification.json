@@ -1,0 +1,118 @@
+{
+   "actions": [],
+   "allow_copy": 1,
+   "creation": "2025-01-26 15:31:14.343879",
+   "doctype": "DocType",
+   "engine": "InnoDB",
+   "field_order": [
+    "section_break_ujvx",
+    "business_owner_id",
+    "business_owner_phone",
+    "otp_code",
+    "column_break_xsef",
+    "otp_sent_time",
+    "otp_expiry_time",
+    "status"
+   ],
+   "fields": [
+    {
+     "fieldname": "section_break_ujvx",
+     "fieldtype": "Section Break"
+    },
+    {
+     "fieldname": "business_owner_id",
+     "fieldtype": "Data",
+     "in_list_view": 1,
+     "in_standard_filter": 1,
+     "label": "Business Owner ID",
+     "no_copy": 1,
+     "read_only": 1,
+     "reqd": 1,
+     "set_only_once": 1
+    },
+    {
+     "fieldname": "business_owner_phone",
+     "fieldtype": "Data",
+     "in_list_view": 1,
+     "in_standard_filter": 1,
+     "label": "Business Owner Phone",
+     "no_copy": 1,
+     "read_only": 1,
+     "reqd": 1,
+     "set_only_once": 1
+    },
+    {
+     "fieldname": "otp_code",
+     "fieldtype": "Data",
+     "label": "OTP Code",
+     "no_copy": 1,
+     "permlevel": 1,
+     "read_only": 1,
+     "reqd": 1,
+     "set_only_once": 1
+    },
+    {
+     "fieldname": "column_break_xsef",
+     "fieldtype": "Column Break"
+    },
+    {
+     "fieldname": "otp_sent_time",
+     "fieldtype": "Datetime",
+     "in_list_view": 1,
+     "label": "OTP Sent Time",
+     "no_copy": 1,
+     "read_only": 1,
+     "reqd": 1,
+     "set_only_once": 1
+    },
+    {
+     "fieldname": "otp_expiry_time",
+     "fieldtype": "Datetime",
+     "in_list_view": 1,
+     "label": "OTP Expiry Time",
+     "no_copy": 1,
+     "read_only": 1,
+     "reqd": 1,
+     "set_only_once": 1
+    },
+    {
+     "default": "Active",
+     "fieldname": "status",
+     "fieldtype": "Select",
+     "in_list_view": 1,
+     "in_standard_filter": 1,
+     "label": "Status",
+     "no_copy": 1,
+     "options": "\nActive\nExpired",
+     "read_only": 1,
+     "reqd": 1
+    }
+   ],
+   "in_create": 1,
+   "index_web_pages_for_search": 1,
+   "links": [],
+   "modified": "2025-01-27 22:15:49.702613",
+   "modified_by": "Administrator",
+   "module": "Tenants Manager",
+   "name": "Business Phone Verification",
+   "owner": "Administrator",
+   "permissions": [
+    {
+     "create": 1,
+     "delete": 1,
+     "email": 1,
+     "export": 1,
+     "print": 1,
+     "read": 1,
+     "report": 1,
+     "role": "System Manager",
+     "share": 1,
+     "write": 1
+    }
+   ],
+   "read_only": 1,
+   "sort_field": "modified",
+   "sort_order": "DESC",
+   "states": [],
+   "title_field": "business_owner_phone"
+  }

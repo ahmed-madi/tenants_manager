@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-26 13:55:44.197423",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "site_settings_section",
+  "admin_email",
+  "apps_to_install",
+  "enable_user_registration",
+  "column_break_upfe",
+  "db_password",
+  "domain",
+  "delete_on_cancel",
+  "auto_create_site_after_submit_business",
+  "build_in_remote",
+  "remote_host",
+  "remote_port",
+  "otp_settings_section",
+  "phone_expire_time",
+  "expire_phone_on_resend_otp",
+  "column_break_msbe",
+  "email_expire_time",
+  "expire_email_on_resend_otp",
+  "auth_section",
+  "enable_oauth",
+  "oauth_client",
+  "oauth_app_name",
+  "column_break_bwnb"
+ ],
+ "fields": [
+  {
+   "fieldname": "otp_settings_section",
+   "fieldtype": "Section Break",
+   "label": "OTP Settings"
+  },
+  {
+   "default": "30",
+   "description": "Default 30 Min.",
+   "fieldname": "phone_expire_time",
+   "fieldtype": "Float",
+   "label": "Expire Phone Verification OTP Code After (In Minutes)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_msbe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "90",
+   "description": "Default 90 Min.",
+   "fieldname": "email_expire_time",
+   "fieldtype": "Float",
+   "label": "Expire Email Verification Code After (In Minutes)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "site_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Site Settings"
+  },
+  {
+   "fieldname": "admin_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Admin/Support Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_upfe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "apps_to_install",
+   "fieldtype": "Table",
+   "label": "Default Apps To Install",
+   "options": "Business App To Install"
+  },
+  {
+   "default": "1",
+   "description": "This will drop all database and all related fiels",
+   "fieldname": "delete_on_cancel",
+   "fieldtype": "Check",
+   "label": "Delete Database On Cancel Site"
+  },
+  {
+   "fieldname": "db_password",
+   "fieldtype": "Password",
+   "label": "Database Password"
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Data",
+   "label": "Domain"
+  },
+  {
+   "default": "0",
+   "fieldname": "expire_phone_on_resend_otp",
+   "fieldtype": "Check",
+   "label": "Expire Phone on Resend OTP"
+  },
+  {
+   "default": "0",
+   "fieldname": "expire_email_on_resend_otp",
+   "fieldtype": "Check",
+   "label": "Expire Email on Resend OTP"
+  },
+  {
+   "default": "0",
+   "fieldname": "auto_create_site_after_submit_business",
+   "fieldtype": "Check",
+   "label": "Auto create site after submit business"
+  },
+  {
+   "depends_on": "build_in_remote",
+   "fieldname": "remote_host",
+   "fieldtype": "Data",
+   "label": "Remote Host",
+   "mandatory_depends_on": "build_in_remote"
+  },
+  {
+   "depends_on": "build_in_remote",
+   "fieldname": "remote_port",
+   "fieldtype": "Data",
+   "label": "Remote Port"
+  },
+  {
+   "default": "0",
+   "fieldname": "build_in_remote",
+   "fieldtype": "Check",
+   "label": "Build Sites in Remote Host"
+  },
+  {
+   "fieldname": "auth_section",
+   "fieldtype": "Section Break",
+   "label": "Auth"
+  },
+  {
+   "fieldname": "column_break_bwnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_user_registration",
+   "fieldtype": "Check",
+   "label": "Enable User Registration"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_oauth",
+   "fieldtype": "Check",
+   "label": "Enable OAuth Client"
+  },
+  {
+   "depends_on": "enable_oauth",
+   "fieldname": "oauth_client",
+   "fieldtype": "Link",
+   "label": "OAuth Client",
+   "mandatory_depends_on": "enable_oauth",
+   "options": "OAuth Client"
+  },
+  {
+   "fetch_from": "oauth_client.app_name",
+   "fieldname": "oauth_app_name",
+   "fieldtype": "Read Only",
+   "label": "OAuth App Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-03-01 12:48:53.711808",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Business Site Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

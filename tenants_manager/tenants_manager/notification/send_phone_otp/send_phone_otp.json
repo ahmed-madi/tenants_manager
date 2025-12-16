@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "SMS",
+ "condition": "doc.status==\"Active\"",
+ "creation": "2025-02-10 15:20:24.801027",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Business Phone Verification",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "{{ doc.otp_code }}",
+ "message_type": "Plain Text",
+ "modified": "2025-02-10 15:42:26.636105",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Send Phone OTP",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "business_owner_phone"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Please verify your phone"
+}

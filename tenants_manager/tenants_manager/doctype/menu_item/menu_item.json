@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MI-{YY}{MM}{DD}-{######}",
+ "creation": "2025-02-17 12:28:33.766599",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "price",
+  "currency",
+  "description",
+  "ingredients",
+  "allergies",
+  "calories",
+  "variations",
+  "category_id",
+  "menu_id",
+  "business_owner_id",
+  "business_id",
+  "image_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "Price"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "ingredients",
+   "fieldtype": "Table",
+   "label": "Ingredients",
+   "options": "Ingredient"
+  },
+  {
+   "fieldname": "allergies",
+   "fieldtype": "Table",
+   "label": "Allergies",
+   "options": "Allergen"
+  },
+  {
+   "fieldname": "calories",
+   "fieldtype": "Data",
+   "label": "Calories"
+  },
+  {
+   "fieldname": "variations",
+   "fieldtype": "Table",
+   "label": "Variations",
+   "options": "Variation"
+  },
+  {
+   "fieldname": "menu_id",
+   "fieldtype": "Link",
+   "label": "Menu ID",
+   "options": "Menu"
+  },
+  {
+   "fieldname": "category_id",
+   "fieldtype": "Link",
+   "label": "Category ID",
+   "options": "Menu Category"
+  },
+  {
+   "fieldname": "business_owner_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Business Owner ID",
+   "options": "Business Owner"
+  },
+  {
+   "fieldname": "business_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Business ID",
+   "options": "Business"
+  },
+  {
+   "fieldname": "image_url",
+   "fieldtype": "Long Text",
+   "label": "Image URL"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-28 18:17:22.260414",
+ "modified_by": "Administrator",
+ "module": "Tenants Manager",
+ "name": "Menu Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "API Role",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
